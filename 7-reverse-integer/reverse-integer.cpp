@@ -10,7 +10,7 @@ public:
         string str = to_string(x);
         string og;
 
-        string limit = (x < 0) ? "2147483648" : "2147483648";
+        string limit = (x < 0) ? "2147483648" : "2147483647";
 
         for (char c : str)
         {
