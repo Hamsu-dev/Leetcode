@@ -8,9 +8,7 @@ public:
         for (int i = 0; i < s.size(); i++)
         {
             if (isalnum(s[i]))
-            {
                 final_str += tolower(s[i]); 
-            }
         }
         string og = final_str;
         reverse(final_str.begin(), final_str.end());
