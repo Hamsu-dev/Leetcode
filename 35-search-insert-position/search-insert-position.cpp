@@ -23,10 +23,6 @@ public:
             {
                 break;
             }
-            //else if (nums.size() == 1)
-            //{
-                //break;
-            //}
         }
         return index;
     }
