@@ -5,13 +5,13 @@ public:
         for( int i = 0; i<nums.size(); i++){
             if (nums[i] == val)
             {
-                nums[i] = 101;
+                nums[i] = 999;
             }
         }
 
         sort(nums.begin(), nums.end());
         for ( int i = 0; i < nums.size(); i++){
-            if (nums[i] == 101) {
+            if (nums[i] == 999) {
                 count--;
             }
         }
