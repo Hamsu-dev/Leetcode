@@ -7,10 +7,6 @@ public:
         string last = strs[strs.size() - 1];
         string prefix = "";
 
-        if (strs.empty())
-        {
-            return "_";
-        }
         for (int i = 0; i < first.size(); i++)
         {
             if (first[i] == last[i])
