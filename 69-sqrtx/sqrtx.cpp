@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int mySqrt(int x) {
+        int L = 0;
+        int R = x;
+        int val;
+
+        while (L <= R)
+        {
+            long long mid = L + (R - L) / 2; 
+            if (mid * mid == x)
+            {
+                return mid;
+            }
+            if (mid * mid < x) 
+            {
+                L = mid + 1;
+                val = mid;
+            }
+            else
+            {
+                R = mid - 1;
+            }
+        }
+        return val;
+    }
+};
