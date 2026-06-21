@@ -1,20 +1,26 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        int lastDigit = digits.size()-1;
-        digits[lastDigit]++;
+        int n = digits.size() - 1;
 
-        for (int i = lastDigit; i >= 0; i--)
+        for (int i = n; i >= 0; i--)
         {
-            if (digits[i] == 10 && i-1 < 0)
+            if (i == n)
             {
-                digits[i] = 0;
-                digits.insert(digits.begin(), 1);
+                digits[i]++;
             }
             if (digits[i] == 10)
             {
-                digits[i-1]++;
                 digits[i] = 0;
+                if (i != 0)
+                {
+                    digits[i - 1] += 1;
+                }
+                else
+                {
+                    digits.push_back(0);
+                    digits[i] = 1;
+                }
             }
         }
         return digits;
