@@ -4,9 +4,10 @@ public:
         int L = 0;
         int R = x;
         int value;
+        
         while (L <= R)
         {
-            long long mid = L + (R - L) / 2; 
+            long long mid = L + ((R - L) / 2); 
             if (mid * mid == x)
             {
                 return mid;
